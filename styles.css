@@ -36,7 +36,7 @@ header {
     position: fixed;
     top: 0;
     right: 0;
-    width: 70%;
+    width: 15.625rem;
     padding: 1rem;
     background-color: #ffffff;
     border: 1px solid #d7d7d7;
@@ -107,3 +107,38 @@ hr {
     object-fit: cover;
 }
 
+.nav-bar {
+    display: none;
+}
+
+/* =================================*/
+/*    MEDIA QUERIES   */
+/* =================================*/
+
+@media screen and (min-width: 768px) {
+    header {
+        padding: 1rem 2rem;
+    }
+    #menu {
+        display: none;
+    }
+
+   .nav-bar, nav, ul, .actions {
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       gap: 1rem;
+       font-size: 1rem;
+   }
+
+   .bar {
+       display: block;
+       width: 1px;
+       height: 1.5rem;
+       background-color: #d7d7d7;
+   }
+
+    .theme span, hr {
+        display: none;
+    }
+}
